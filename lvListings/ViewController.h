@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+@property(nonatomic,retain) IBOutlet UILabel *helloLabel;
+@property(nonatomic, strong) IBOutlet UITextField *url;
+@property(nonatomic, strong) IBOutlet UITextView *tv;
+-(IBAction)getData:(id)sender;
 
+-(NSString*)getDatafromUrl:(NSString*) url;
 @end
